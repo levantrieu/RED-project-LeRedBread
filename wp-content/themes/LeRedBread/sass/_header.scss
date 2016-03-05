@@ -1,14 +1,21 @@
 .site-header {
   width: 100%;
+  padding-top: 2rem;
   background-color: #fafafa;
+}
+
+.site-branding {
+  width: 100%;
+  background-color: #ffffff;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
 }
 
-.site-branding {
+.site-branding-inner {
   width: 1024px;
   margin: 0 auto;
-  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -18,4 +25,18 @@
 
 .site-description {
   display: none;
+}
+
+.social-icon {
+  align-self: center;
+
+  li {
+    display: inline;
+    list-style: none;
+    margin: 0 0.75rem;
+
+    a {
+      color: #222;
+    }
+  }
 }

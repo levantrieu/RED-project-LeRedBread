@@ -32,6 +32,11 @@ a {
 	float: left;
 	width: 100%;
 
+	.main-navigation-inner {
+		width: 1024px;
+		margin: 0 auto;
+	}
+
 	ul {
 		display: none;
 		list-style: none;
@@ -77,11 +82,17 @@ a {
 		}
 	}
 	li {
+		border-left: 1px solid #000;
+		padding: 0.5rem 0.75rem;
 		float: left;
 		position: relative;
 
 		&:hover > a,
 		&.focus > a {
+		}
+
+		li:last-child {
+			border-right: 1px solid #000;
 		}
 	}
 	a {
