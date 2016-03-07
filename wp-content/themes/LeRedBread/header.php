@@ -23,7 +23,7 @@
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
-				<div class="site-branding-inner">
+				<div class="site-branding-inner site-container">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<div class="logo"><img src="<?php bloginfo( 'template_directory' ); ?>/images/lrb-logo.svg" /></div>
 					<div class="social-icon">
@@ -47,7 +47,7 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="main-navigation-inner">
+				<div class="site-container">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<div>

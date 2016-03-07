@@ -59,6 +59,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "forms";
 @import "navigation";
 @import "header";
+@import "blog";
+@import "footer";
 @import "modules";
 @import "widgets";
 @import "content";
@@ -70,7 +72,15 @@ html {
 	color: #222;
 }
 
+.site-container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
 h1 {
 	font-family: 'Overlock', sans-serif;
-	font-size: 2rem;
+	font-size: 1.75rem;
+	color: $color__brand-five;
+	text-transform: uppercase;
+	text-align: center;
 }

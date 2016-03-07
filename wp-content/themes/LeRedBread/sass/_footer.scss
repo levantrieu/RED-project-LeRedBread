@@ -1,0 +1,40 @@
+footer {
+  background-color: $color__brand-five;
+
+  .footer-contact {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-info {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    align-self: center;
+
+    p {
+      margin: 0rem;
+    }
+
+    .social-icons-footer {
+      font-size: 1.2rem;
+
+      a {
+        color: #fff;
+        outline: none;
+        margin-right: 0.5rem;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: #fff;
+    background-color: $color__brand-six;
+    text-align: center;
+  }
+}

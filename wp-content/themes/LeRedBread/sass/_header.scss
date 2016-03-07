@@ -12,8 +12,6 @@
 }
 
 .site-branding-inner {
-  width: 1024px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -36,7 +34,7 @@
     margin: 0 0.75rem;
 
     a {
-      color: #222;
+      color: $color__brand-four;
     }
   }
 }
