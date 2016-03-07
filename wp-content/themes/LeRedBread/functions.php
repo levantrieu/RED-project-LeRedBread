@@ -102,3 +102,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+* Add read more link to blog posts.
+*/
+
+function themeprefix_excerpt_read_more_link( $output ) {
+	global $post;
+	return $output . ' <a href="' . get_permalink( $post->ID ) . '" class="more-link" title="Read More">Read more →</a>';
+}
+add_filter( 'the_excerpt', 'themeprefix_excerpt_read_more_link' );

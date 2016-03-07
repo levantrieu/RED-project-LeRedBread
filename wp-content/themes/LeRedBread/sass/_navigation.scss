@@ -32,6 +32,7 @@ a {
 	float: left;
 	width: 100%;
 	box-shadow: 0 2px 3px 0 rgba(150, 150, 150, 0.25);
+	overflow: auto;
 
 	ul {
 		display: none;
@@ -78,13 +79,16 @@ a {
 		}
 	}
 	li {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: bold;
 		border-left: 1px solid $color__brand-three;
-		padding: 0.5rem 0.75rem;
 		float: left;
 		position: relative;
 
 		&:hover > a,
 		&.focus > a {
+			color: $color__brand-five;
 		}
 
 		li:last-child {
@@ -92,13 +96,16 @@ a {
 		}
 	}
 	a {
+		color: $color__brand-three;
 		display: block;
 		text-decoration: none;
+		padding: 0.5rem 1.25rem;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		border-bottom: 3px solid $color__brand-one;
 	}
 }
 
@@ -107,6 +114,7 @@ a {
 .search-form fieldset {
 	border: none;
 	text-align: right;
+	padding: 0.3rem 0 0 0;
 
 	input {
 		font-family: 'Open Sans', sans-serif;
