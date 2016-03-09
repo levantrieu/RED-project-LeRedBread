@@ -20,7 +20,7 @@
   font-weight: normal;
 }
 
-.more-link {
+.read-more {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -29,6 +29,11 @@
 
   &:hover {
     color: $color__brand-two;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $color__brand-one;
     text-decoration: underline;
   }
 }

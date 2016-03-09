@@ -1,6 +1,3 @@
-text from product archive page
-
-
 <?php
 /**
  * The template for displaying archive products.
@@ -27,6 +24,7 @@ get_header(); ?>
         <?php if ( has_post_thumbnail() ) : ?>
           <?php the_post_thumbnail( 'large' ); ?>
         <?php endif; ?>
+        <?php the_title( '<p class="product-archive-name">', '</p>' ); ?>
         <?php echo CFS()->get( 'price' ); ?>
 
 

@@ -24,6 +24,29 @@
 }
 
 /* -------
+products grid
+------- */
+
+.product-types-grid {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 3rem;
+}
+
+.single-product-type {
+  flex: 0 1 25%;
+  margin: 1rem;
+  overflow: hidden;
+
+    img {
+      display: block;
+      width: 80%;
+      margin: 0 auto 1.25rem;
+    }
+  }
+
+
+/* -------
 testimonials
 ------- */
 

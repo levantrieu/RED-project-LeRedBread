@@ -540,7 +540,7 @@ a {
     font-weight: normal;
     border: none;
     outline: none;
-    width: 20%; }
+    width: 25%; }
     .search-form fieldset input:focus {
       border: none; }
   .search-form fieldset button {
@@ -635,14 +635,17 @@ a {
   font-size: 1rem;
   font-weight: normal; }
 
-.more-link {
+.read-more {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: #db272a;
   text-decoration: none; }
-  .more-link:hover {
+  .read-more:hover {
     color: #400c0d;
+    text-decoration: underline; }
+  .read-more:visited {
+    color: #db272a;
     text-decoration: underline; }
 
 footer {
@@ -889,6 +892,29 @@ object {
           align-self: center; }
 
 /* -------
+products grid
+------- */
+.product-types-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 3rem; }
+
+.single-product-type {
+  -webkit-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  margin: 1rem;
+  overflow: hidden; }
+  .single-product-type img {
+    display: block;
+    width: 80%;
+    margin: 0 auto 1.25rem; }
+
+/* -------
 testimonials
 ------- */
 .test-header {
@@ -995,3 +1021,9 @@ h1 {
 h2 {
   font-family: 'Overlock', sans-serif;
   font-size: 1.75rem; }
+
+h3 {
+  font-family: 'Overlock', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.75rem 0; }

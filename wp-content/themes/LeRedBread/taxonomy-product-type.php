@@ -10,6 +10,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			text from taxonomy-product-type.php
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
