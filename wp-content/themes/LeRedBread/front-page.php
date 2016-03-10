@@ -29,8 +29,8 @@ get_header(); ?>
       <?php endif; ?>
     </div>
 
-    <!-- Products button -->
-    <div class="site-container products-cta">
+    <!-- Products CTA -->
+    <div class="site-container cta">
       <p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</p>
       <button class="products-button"><a href="<?php bloginfo('url'); ?>/products/"><div>See Our Products</div></a></button>
     </div>
@@ -38,7 +38,7 @@ get_header(); ?>
 
     <!-- News get_posts loop -->
     <div class="news-section">
-      <h1>Our Latest News</h1>
+      <h2>Our Latest News</h2>
       <div class="section-decoration">
         <div class="rule">
           <div class="dot"></div>
@@ -58,9 +58,9 @@ get_header(); ?>
               </div>
             <?php endif; ?>
             <div class="news-text-wrapper">
-              <h4>
-                <a href="<?php the_permalink(); ?>"><?php the_titlesmall('', '...', true, '25'); ?></a>
-              </h4>
+              <h5>
+                <a href="<?php the_permalink(); ?>"><div class="title-short"><?php the_title(); ?>  </div></a>
+              </h5>
               <span class="entry-meta">
                 <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
               </span>
@@ -72,7 +72,7 @@ get_header(); ?>
     <!-- Testimonials -->
 
     <div class="site-container">
-      <h1>What Others Say About Us</h1>
+      <h2>What Others Say About Us</h2>
       <div class="section-decoration">
         <div class="rule">
           <div class="dot"></div>

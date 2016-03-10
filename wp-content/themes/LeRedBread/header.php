@@ -25,7 +25,7 @@
 			<div class="site-branding">
 				<div class="site-branding-inner site-container">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<div class="logo"><img src="<?php bloginfo( 'template_directory' ); ?>/images/lrb-logo.svg" /></div>
+					<div class="logo"><img src="<?php bloginfo( 'template_directory' ); ?>/images/lrb-logo.svg" alt="Le Red Bread logo" /></div>
 					<div class="social-icon">
 						<ul>
 							<li>
