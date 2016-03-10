@@ -21,7 +21,7 @@ get_header(); ?>
       <?php if ( ! empty( $terms ) ) : ?>
         <?php foreach ( $terms as $term) : ?>
           <div class="single-product-type">
-            <img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt="<?php echo $term->slug; ?>" />
             <h3><?php echo $term->name; ?></h3>
             <p><?php echo $term->description; ?> <a href="<?php echo get_term_link( $term ); ?>">See More...</a></p>
           </div>
@@ -30,49 +30,54 @@ get_header(); ?>
     </div>
 
     <!-- Products button -->
-    <div class="site-container products-callout">All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</div>
+    <div class="site-container products-cta">
+      <p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</p>
+      <button class="products-button"><a href="<?php bloginfo('url'); ?>/products/"><div>See Our Products</div></a></button>
+    </div>
 
 
     <!-- News get_posts loop -->
-    <h1>Our Latest News</h1>
-    <div class="section-decoration">
-    <div class="rule">
-      <div class="dot"></div>
-    </div>
-  </div>
-
-    <?php
-    $args = array ( 'post_type' => 'post', 'posts_per_page' => 4 );
-    $lastest_posts = get_posts( $args );
-    ?>
-    <div class="site-container latest-news-wrapper">
-      <?php foreach ($lastest_posts as $post) : setup_postdata( $posts ); ?>
-        <div class="latest-news-single">
-          <?php if ( has_post_thumbnail() ): ?>
-            <div class="latest-news-image">
-              <?php the_post_thumbnail( 'large' ); ?>
-            </div>
-          <?php endif; ?>
-
-          <h4>
-            <a href="<?php the_permalink(); ?>"><?php the_titlesmall('', '...', true, '26'); ?></a>
-          </h4>
-          <span class="entry-meta">
-            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-          </span>
+    <div class="news-section">
+      <h1>Our Latest News</h1>
+      <div class="section-decoration">
+        <div class="rule">
+          <div class="dot"></div>
         </div>
-      <?php endforeach; wp_reset_postdata(); ?>
-    </div>
+      </div>
 
+      <?php
+      $args = array ( 'post_type' => 'post', 'posts_per_page' => 4 );
+      $lastest_posts = get_posts( $args );
+      ?>
+      <div class="site-container latest-news-wrapper">
+        <?php foreach ($lastest_posts as $post) : setup_postdata( $posts ); ?>
+          <div class="latest-news-single">
+            <?php if ( has_post_thumbnail() ): ?>
+              <div class="latest-news-image">
+                <?php the_post_thumbnail( 'large' ); ?>
+              </div>
+            <?php endif; ?>
+            <div class="news-text-wrapper">
+              <h4>
+                <a href="<?php the_permalink(); ?>"><?php the_titlesmall('', '...', true, '25'); ?></a>
+              </h4>
+              <span class="entry-meta">
+                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+              </span>
+            </div>
+          </div>
+        <?php endforeach; wp_reset_postdata(); ?>
+      </div>
+    </div>
     <!-- Testimonials -->
 
     <div class="site-container">
       <h1>What Others Say About Us</h1>
       <div class="section-decoration">
-      <div class="rule">
-        <div class="dot"></div>
+        <div class="rule">
+          <div class="dot"></div>
+        </div>
       </div>
-    </div>
     </div>
     <section class="site-container testimonials">
       <div class="single-test">

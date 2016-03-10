@@ -15,3 +15,14 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+.day-of-week {
+	margin: 0.15rem 0;
+
+	span {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: bold;
+		color: $color__brand_one;
+	}
+}
