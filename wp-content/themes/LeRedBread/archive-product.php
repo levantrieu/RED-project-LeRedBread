@@ -20,6 +20,25 @@ get_header(); ?>
 				<p class="tagline">We are a team of creative and talented individuals who love making delicious treats.</p>
 			</header>
 
+			<div class="section-decoration">
+				<div class="rule">
+					<div class="dot"></div>
+				</div>
+			</div>
+
+			<div class="site-container product-icons-grid">
+				<?php $terms = get_terms( 'product-type' ); ?>
+
+				<?php if ( ! empty( $terms ) ) : ?>
+					<?php foreach ( $terms as $term) : ?>
+						<div class="single-product-icon">
+							<img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt="<?php echo $term->slug; ?>" />
+							<h6><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></h6>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>
+			</div>
+
 			<div class="products-archive-wrapper">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -27,8 +46,8 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail() ) : ?>
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
 						<?php endif; ?>
-						<?php the_title( '<p class="product-archive-name">', '</p>' ); ?>
-						<?php echo CFS()->get( 'price' ); ?>
+						<?php the_title( '<span class="product-archive-name">', '</span>' ); ?>
+						<span class="product-price"><?php echo CFS()->get( 'price' ); ?></span>
 					</div>
 				<?php endwhile; ?>
 

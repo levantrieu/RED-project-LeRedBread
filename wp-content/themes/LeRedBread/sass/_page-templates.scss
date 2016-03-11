@@ -78,38 +78,6 @@ call to action
   }
 }
 
-.products-button {
-  align-self: center;
-  width: 11rem;
-  height: 3rem;
-  background: rgba(64, 12, 13, 1);
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  box-shadow: none;
-  text-shadow: none;
-  display: flex;
-  justify-content: center;
-
-  &:hover {
-    background: rgba(64, 12, 13, 0.9);
-    box-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    align-self: center;
-  }
-}
-
 /* -------
 section divider decoration
 ------- */
@@ -331,6 +299,26 @@ About page
 /* ------------------
 Products Archive page
 ---------------------*/
+
+.product-icons-grid {
+  padding: 0 8rem 1rem;
+  display: flex;
+}
+
+.single-product-icon {
+  flex: 0 1 25%;
+  margin: 1rem 2rem;
+
+  a, a:visited {
+    color: $color__brand-two;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
 .products-archive-wrapper {
   display: flex;

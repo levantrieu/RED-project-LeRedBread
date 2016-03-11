@@ -41,7 +41,7 @@ get_header(); ?>
     <!-- Contact CTA -->
     <div class="cta">
       <p>Feel free to contact us with any questions coments or suggestions. We even take custom orders!</p>
-      <button class="products-button"><a href="<?php bloginfo('url'); ?>/contact/"><div>Contact Us</div></a></button>
+      <button class="main-button"><a href="<?php bloginfo('url'); ?>/contact/"><div>Contact Us</div></a></button>
     </div>
 
   </main><!-- #main -->

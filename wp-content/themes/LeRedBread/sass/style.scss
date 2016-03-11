@@ -119,3 +119,42 @@ h5 {
 	font-size: 1rem;
 	margin: 0 0;
 }
+
+h6 {
+	font-family: 'Overlock', sans-serif;
+	font-size: 1.25rem;
+	text-align: center;
+	margin: 0.75rem 0;
+}
+
+.main-button {
+  align-self: center;
+  width: 11rem;
+  height: 3rem;
+  background: rgba(64, 12, 13, 1);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  text-shadow: none;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(64, 12, 13, 0.9);
+    box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+  }
+}

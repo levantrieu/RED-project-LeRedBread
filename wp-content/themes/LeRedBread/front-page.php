@@ -32,7 +32,7 @@ get_header(); ?>
     <!-- Products CTA -->
     <div class="site-container cta">
       <p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</p>
-      <button class="products-button"><a href="<?php bloginfo('url'); ?>/products/"><div>See Our Products</div></a></button>
+      <button class="main-button"><a href="<?php bloginfo('url'); ?>/products/">See Our Products</a></button>
     </div>
 
 
@@ -59,7 +59,7 @@ get_header(); ?>
             <?php endif; ?>
             <div class="news-text-wrapper">
               <h5>
-                <a href="<?php the_permalink(); ?>"><div class="title-short"><?php the_title(); ?>  </div></a>
+                <a href="<?php the_permalink(); ?>"><div class="title-short"><?php the_title(); ?></div></a>
               </h5>
               <span class="entry-meta">
                 <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
@@ -69,6 +69,7 @@ get_header(); ?>
         <?php endforeach; wp_reset_postdata(); ?>
       </div>
     </div>
+
     <!-- Testimonials -->
 
     <div class="site-container">
