@@ -838,28 +838,69 @@ footer {
     font-size: 1.25rem;
     text-align: left;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0rem 0rem 1rem 0rem; }
   .widget .textwidget {
     color: #a1a1a1; }
-    .widget .textwidget p {
-      margin: 0.5rem 0rem; }
-    .widget .textwidget i {
-      color: #808080;
-      line-height: 1.5rem;
-      width: 1.25rem;
-      margin: 0rem 1rem 0rem 0rem; }
+    .widget .textwidget .contact-info {
+      margin: 0rem 0rem 0rem 1.1rem;
+      padding: 0rem 0.5rem 0.5rem 0rem; }
+      .widget .textwidget .contact-info li {
+        list-style: none;
+        margin: 0rem 0rem 0.75rem 0rem;
+        margin-left: 1rem; }
+        .widget .textwidget .contact-info li a {
+          color: #db272a;
+          text-decoration: none; }
+          .widget .textwidget .contact-info li a:hover {
+            color: #400c0d;
+            text-decoration: underline; }
+      .widget .textwidget .contact-info .phone:before {
+        content: '\f095';
+        font-family: 'FontAwesome';
+        float: left;
+        margin-left: -2rem;
+        color: #808080; }
+      .widget .textwidget .contact-info .email:before {
+        content: '\f0e0';
+        font-family: 'FontAwesome';
+        float: left;
+        margin-left: -2rem;
+        color: #808080; }
+      .widget .textwidget .contact-info .address:before {
+        content: '\f041';
+        font-family: 'FontAwesome';
+        float: left;
+        margin-left: -2rem;
+        color: #808080; }
 
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
 
-.day-of-week {
-  margin: 0.15rem 0; }
-  .day-of-week span {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #db272a; }
+/* Business Hours widget. */
+.lrb-hours-class {
+  margin: 0rem 0rem 2.75rem; }
+  .lrb-hours-class .day-of-week {
+    margin: 0rem 0rem 0.75rem 0rem;
+    color: #808080; }
+    .lrb-hours-class .day-of-week span {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #db272a; }
+
+/* Archive widget */
+.widget_archive ul {
+  padding: 0rem;
+  margin: 0rem 0rem; }
+  .widget_archive ul li {
+    list-style: none; }
+    .widget_archive ul li a {
+      color: #db272a;
+      text-decoration: none; }
+      .widget_archive ul li a:hover {
+        color: #400c0d;
+        text-decoration: underline; }
 
 /*--------------------------------------------------------------
 # Content

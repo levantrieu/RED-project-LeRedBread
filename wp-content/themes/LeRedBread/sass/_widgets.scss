@@ -15,23 +15,58 @@
 		font-size: 1.25rem;
 		text-align: left;
 		text-transform: uppercase;
-		margin: 0;
+		margin: 0rem 0rem 1rem 0rem;
+
 	}
 
 	.textwidget {
 		color: $color__brand-three;
 
-		p {
-			margin: 0.5rem 0rem;
-		}
+		.contact-info {
+			margin: 0rem 0rem 0rem 1.1rem;
+			padding: 0rem 0.5rem 0.5rem 0rem;
 
-		i {
-			color: $color__brand-four;
-			line-height: 1.5rem;
-			width: 1.25rem;
-			margin: 0rem 1rem 0rem 0rem;
+			li {
+				list-style: none;
+				margin: 0rem 0rem 0.75rem 0rem;
+				margin-left: 1rem;
+
+				a {
+					color: $color__brand_one;
+					text-decoration: none;
+
+					&:hover {
+						color: $color__brand_two;
+						text-decoration: underline;
+					}
+				}
+			}
+
+			.phone:before {
+				content: '\f095';
+				font-family: 'FontAwesome';
+				float: left;
+				margin-left: -2rem;
+				color: $color__brand-four;
+			}
+
+			.email:before {
+				content: '\f0e0';
+				font-family: 'FontAwesome';
+				float: left;
+				margin-left: -2rem;
+				color: $color__brand-four;
+			}
+
+			.address:before {
+				content: '\f041';
+				font-family: 'FontAwesome';
+				float: left;
+				margin-left: -2rem;
+				color: $color__brand-four;
 			}
 		}
+	}
 }
 
 /* Search widget. */
@@ -39,13 +74,45 @@
 	display: none;
 }
 
-.day-of-week {
-	margin: 0.15rem 0;
 
-	span {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 1rem;
-		font-weight: bold;
-		color: $color__brand_one;
+/* Business Hours widget. */
+
+.lrb-hours-class {
+	margin: 0rem 0rem 2.75rem;
+
+	.day-of-week {
+		margin: 0rem 0rem 0.75rem 0rem;
+		color: $color__brand-four;
+
+		span {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1rem;
+			font-weight: bold;
+			color: $color__brand_one;
+		}
+	}
+}
+
+/* Archive widget */
+
+.widget_archive {
+
+	ul {
+		padding: 0rem;
+		margin: 0rem 0rem;
+
+		li {
+			list-style: none;
+
+			a {
+				color: $color__brand_one;
+				text-decoration: none;
+
+				&:hover {
+					color: $color__brand_two;
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 }
