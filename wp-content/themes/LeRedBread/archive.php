@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+text from archive.php
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

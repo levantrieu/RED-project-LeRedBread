@@ -100,6 +100,7 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		color: $color__brand_two;
 		box-shadow:inset 0px -3px 0px 0px $color__brand-one;
 	}
 }

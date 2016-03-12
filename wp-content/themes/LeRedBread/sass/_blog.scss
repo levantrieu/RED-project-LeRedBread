@@ -1,5 +1,6 @@
 .entry-title {
   margin-bottom: 0;
+  text-transform: capitalize;
 
   a {
     color: $color__brand-one;
@@ -35,5 +36,16 @@
   &:visited {
     color: $color__brand-one;
     text-decoration: underline;
+  }
+}
+
+/* ------------------
+Blog Archive page
+---------------------*/
+
+.blog-archive {
+
+  .entry-title {
+    margin: 0;
   }
 }

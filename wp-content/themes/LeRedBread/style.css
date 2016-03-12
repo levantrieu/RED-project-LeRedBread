@@ -584,6 +584,7 @@ a {
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
+    color: #400c0d;
     box-shadow: inset 0px -3px 0px 0px #db272a; }
 
 /* Search field */
@@ -690,7 +691,8 @@ a {
       color: #808080; }
 
 .entry-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-transform: capitalize; }
   .entry-title a {
     color: #db272a;
     text-decoration: none; }
@@ -718,6 +720,12 @@ a {
   .read-more:visited {
     color: #db272a;
     text-decoration: underline; }
+
+/* ------------------
+Blog Archive page
+---------------------*/
+.blog-archive .entry-title {
+  margin: 0; }
 
 footer {
   background-color: #222222;
@@ -1272,7 +1280,7 @@ body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-co
     -webkit-flex: 0 1 70%;
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
-    padding-right: 2rem;
+    padding-right: 6rem;
     margin: 0rem; }
   body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-content .entry-title {
     text-align: left;
@@ -1287,6 +1295,43 @@ body:not(.home):not(.about-page):not(.archive-product-page) .widget-area {
   padding: 3rem 0rem 0rem 4rem;
   margin: -3rem 0rem -4rem;
   border-left: 1px solid #e1e1e1; }
+
+/* ------------------
+Product Type page
+---------------------*/
+.product-type .page-title {
+  text-align: left; }
+
+.product-type .taxonomy-description {
+  text-align: left; }
+
+.product-type .single-product {
+  padding: 1.5rem 0rem;
+  border-top: 1px dashed #d2d2d2;
+  border-bottom: 1px dashed #d2d2d2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .product-type .single-product .entry-title {
+    color: #db272a;
+    font-size: 2rem;
+    text-transform: capitalize; }
+  .product-type .single-product .product-image {
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    padding-top: 0.75rem; }
+    .product-type .single-product .product-image img {
+      max-width: 12rem;
+      margin-right: 2rem;
+      float: left; }
+  .product-type .single-product .product-description {
+    -webkit-flex: 0 1 75%;
+        -ms-flex: 0 1 75%;
+            flex: 0 1 75%; }
 
 html {
   font-size: 16px;

@@ -327,7 +327,7 @@ body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-co
 
   .site-container {
     flex: 0 1 70%;
-    padding-right: 2rem;
+    padding-right: 6rem;
     margin: 0rem;
   }
 
@@ -346,4 +346,48 @@ body:not(.home):not(.about-page):not(.archive-product-page) .widget-area {
   padding: 3rem 0rem 0rem 4rem;
   margin: -3rem 0rem -4rem;
   border-left: 1px solid #e1e1e1;
+}
+
+/* ------------------
+Product Type page
+---------------------*/
+
+.product-type {
+
+  .page-title {
+    text-align: left;
+  }
+
+  .taxonomy-description {
+    text-align: left;
+  }
+
+  .single-product {
+    padding: 1.5rem 0rem;
+    border-top: 1px dashed #d2d2d2;
+    border-bottom: 1px dashed #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+
+    .entry-title {
+      color: $color__brand-one;
+      font-size: 2rem;
+      text-transform: capitalize;
+    }
+
+    .product-image {
+      flex: 0 1 25%;
+      padding-top: 0.75rem;
+
+      img {
+        max-width: 12rem;
+        margin-right: 2rem;
+        float: left;
+      }
+    }
+
+    .product-description {
+      flex: 0 1 75%;
+    }
+  }
 }
