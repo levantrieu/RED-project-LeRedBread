@@ -28,7 +28,7 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 					<div class="product-description">
-						<?php the_title( '<h4 class="entry-title">', '</h4>' ); ?>
+						<a href="<?php the_permalink(); ?>"><?php the_title( '<h4>', '</h4>' ); ?></a>
 						<p><?php the_content(); ?></p>
 						<p class="product-price">Price: <?php echo CFS()->get( 'price' ); ?></p>
 					</div>

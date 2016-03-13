@@ -131,7 +131,7 @@ h6 {
   align-self: center;
   width: 11rem;
   height: 3rem;
-  background: rgba(64, 12, 13, 1);
+  background: $color__brand-two;
   padding: 0.5rem;
   border-radius: 0.25rem;
   box-shadow: none;
@@ -140,7 +140,7 @@ h6 {
   justify-content: center;
 
   &:hover {
-    background: rgba(64, 12, 13, 0.9);
+    background: $color__brand-seven;
     box-shadow: none;
     box-shadow: none;
     text-shadow: none;

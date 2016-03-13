@@ -320,17 +320,19 @@ Single Product page
 ---------------------*/
 
 body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-content {
-    width: 1024px;
-    margin: 3rem auto 0rem;
-    display: flex;
-    justify-content: space-between;
+  width: 1024px;
+  margin: 3rem auto 0rem;
+  display: flex;
+  justify-content: space-between;
 
   .site-container {
     flex: 0 1 70%;
-    padding-right: 6rem;
+    padding-right: 4rem;
     margin: 0rem;
   }
+}
 
+.type-product {
   .entry-title {
     text-align: left;
     margin: 0rem 0rem 1.5rem;
@@ -369,25 +371,126 @@ Product Type page
     display: flex;
     justify-content: space-between;
 
-    .entry-title {
+    a, a:visited {
       color: $color__brand-one;
-      font-size: 2rem;
       text-transform: capitalize;
+      text-decoration: none;
+
+      h4 {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      &:hover {
+        color: $color__brand-seven;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .product-image {
+    flex: 0 1 25%;
+    padding-top: 0.75rem;
+
+    img {
+      max-width: 12rem;
+      margin-right: 2rem;
+      float: left;
+    }
+  }
+
+  .product-description {
+    flex: 0 1 75%;
+  }
+}
+
+/* ------------------
+Contact page
+---------------------*/
+
+.contact-page {
+  h1 {
+    text-align: left;
+  }
+
+  h2 {
+    color: $color__brand-four;
+    text-transform: none;
+    text-align: left;
+    margin: 1.5rem 0rem;
+  }
+
+  .wpcf7 {
+
+    p {
+      font-weight: bold;
+      color: $color__brand-four;
     }
 
-    .product-image {
-      flex: 0 1 25%;
-      padding-top: 0.75rem;
+    span {
+      font-weight: bold;
+      color: $color__brand-one;
+    }
 
-      img {
-        max-width: 12rem;
-        margin-right: 2rem;
-        float: left;
+    input, textarea {
+      margin: 0.5rem 0rem 0rem;
+      border-radius: 0.25rem;
+      background-color: #fafafa;
+      border: 1px solid #e1e1e1;
+    }
+
+    input.wpcf7-form-control.wpcf7-text {
+      font-weight: normal;
+      color: $color__brand-five;
+      padding: 0.75rem 0.5rem;
+      width: 100%;
+    }
+
+    .name-email-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        font-weight: bold;
+        color: $color__brand-four;
+        flex: 0 1 49%;
       }
     }
 
-    .product-description {
-      flex: 0 1 75%;
+    button, input[type=button], input[type=reset], input[type=submit] {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: normal;
+      font-size: 1rem;
+      color: #fff;
+      align-self: center;
+      width: 6rem;
+      height: 3rem;
+      background: $color__brand-two;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      box-shadow: none;
+      text-shadow: none;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        background: $color__brand-seven;
+        box-shadow: none;
+        box-shadow: none;
+        text-shadow: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        align-self: center;
+      }
     }
   }
 }

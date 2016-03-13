@@ -7,11 +7,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area site-container">
+	<div id="primary" class="content-area site-container contact-page">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-<p>Text from page.php</p>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>

@@ -1280,13 +1280,15 @@ body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-co
     -webkit-flex: 0 1 70%;
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
-    padding-right: 6rem;
+    padding-right: 4rem;
     margin: 0rem; }
-  body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-content .entry-title {
-    text-align: left;
-    margin: 0rem 0rem 1.5rem; }
-  body:not(.home):not(.about-page):not(.archive-product-page):not(header) .site-content h4 {
-    text-align: left; }
+
+.type-product .entry-title {
+  text-align: left;
+  margin: 0rem 0rem 1.5rem; }
+
+.type-product h4 {
+  text-align: left; }
 
 body:not(.home):not(.about-page):not(.archive-product-page) .widget-area {
   -webkit-flex: 0 1 30%;
@@ -1315,23 +1317,114 @@ Product Type page
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .product-type .single-product .entry-title {
+  .product-type .single-product a, .product-type .single-product a:visited {
     color: #db272a;
-    font-size: 2rem;
-    text-transform: capitalize; }
-  .product-type .single-product .product-image {
-    -webkit-flex: 0 1 25%;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
-    padding-top: 0.75rem; }
-    .product-type .single-product .product-image img {
-      max-width: 12rem;
-      margin-right: 2rem;
-      float: left; }
-  .product-type .single-product .product-description {
-    -webkit-flex: 0 1 75%;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%; }
+    text-transform: capitalize;
+    text-decoration: none; }
+    .product-type .single-product a h4, .product-type .single-product a:visited h4 {
+      font-size: 2rem;
+      text-align: left; }
+    .product-type .single-product a:hover, .product-type .single-product a:visited:hover {
+      color: #6B1416;
+      text-decoration: underline; }
+
+.product-type .product-image {
+  -webkit-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding-top: 0.75rem; }
+  .product-type .product-image img {
+    max-width: 12rem;
+    margin-right: 2rem;
+    float: left; }
+
+.product-type .product-description {
+  -webkit-flex: 0 1 75%;
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%; }
+
+/* ------------------
+Contact page
+---------------------*/
+.contact-page h1 {
+  text-align: left; }
+
+.contact-page h2 {
+  color: #808080;
+  text-transform: none;
+  text-align: left;
+  margin: 1.5rem 0rem; }
+
+.contact-page .wpcf7 p {
+  font-weight: bold;
+  color: #808080; }
+
+.contact-page .wpcf7 span {
+  font-weight: bold;
+  color: #db272a; }
+
+.contact-page .wpcf7 input, .contact-page .wpcf7 textarea {
+  margin: 0.5rem 0rem 0rem;
+  border-radius: 0.25rem;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1; }
+
+.contact-page .wpcf7 input.wpcf7-form-control.wpcf7-text {
+  font-weight: normal;
+  color: #333333;
+  padding: 0.75rem 0.5rem;
+  width: 100%; }
+
+.contact-page .wpcf7 .name-email-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .contact-page .wpcf7 .name-email-wrapper div {
+    font-weight: bold;
+    color: #808080;
+    -webkit-flex: 0 1 49%;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%; }
+
+.contact-page .wpcf7 button, .contact-page .wpcf7 input[type=button], .contact-page .wpcf7 input[type=reset], .contact-page .wpcf7 input[type=submit] {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #fff;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  width: 6rem;
+  height: 3rem;
+  background: #400c0d;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  text-shadow: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .contact-page .wpcf7 button:hover, .contact-page .wpcf7 input[type=button]:hover, .contact-page .wpcf7 input[type=reset]:hover, .contact-page .wpcf7 input[type=submit]:hover {
+    background: #6B1416;
+    box-shadow: none;
+    box-shadow: none;
+    text-shadow: none; }
+  .contact-page .wpcf7 button:focus, .contact-page .wpcf7 input[type=button]:focus, .contact-page .wpcf7 input[type=reset]:focus, .contact-page .wpcf7 input[type=submit]:focus {
+    outline: none; }
+  .contact-page .wpcf7 button a, .contact-page .wpcf7 input[type=button] a, .contact-page .wpcf7 input[type=reset] a, .contact-page .wpcf7 input[type=submit] a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
 
 html {
   font-size: 16px;
@@ -1402,7 +1495,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center; }
   .main-button:hover {
-    background: rgba(64, 12, 13, 0.9);
+    background: #6B1416;
     box-shadow: none;
     box-shadow: none;
     text-shadow: none; }
