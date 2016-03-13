@@ -84,13 +84,14 @@ a {
 		&:hover > a,
 		&.focus > a {
 			color: $color__brand-five;
+			text-decoration: none;
 		}
 
 		&:nth-last-child(1) {
 			border-right: 1px solid #e1e1e1;
 		}
 	}
-	a {
+	a, a:visited {
 		color: $color__brand-four;
 		display: block;
 		text-decoration: none;
