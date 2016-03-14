@@ -2,7 +2,7 @@
 Blog archive
 ---------------------*/
 
-.post-archive, .search-page {
+.post-archive, .search-page, .month-archive {
   .hentry {
     margin: 0 0 4rem;
   }
@@ -56,6 +56,24 @@ a, a:visited {
     text-decoration: underline;
   }
 }
+
+/* ------------------
+Blog month archive
+---------------------*/
+
+.month-archive {
+
+  .page-header {
+    @include dashed-border;
+    padding: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
+
+    .page-title {
+      text-align: left;
+    }
+  }
+}
+
 
 /* ------------------
 Blog post
@@ -184,7 +202,7 @@ Blog post
       margin: 0;
 
       li {
-        border-bottom: 1px dashed #d2d2d2;
+        @include dashed-border;
         margin: 1rem 0 2rem 0;
 
         article {
@@ -207,8 +225,6 @@ Blog post
           }
         }
       }
-
-
 
       .comment-body {
         display: flex;

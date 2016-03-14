@@ -21,7 +21,7 @@
 				<a href="#" target="blank"><i class="fa fa-google-plus-square"></i></a>
 			</p>
 		</div>
-		<div class="logo-footer"><img src="<?php bloginfo( 'template_directory' ); ?>/images/lrb-logo-white.svg" /></div>
+		<div class="logo-footer"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/lrb-logo-white.svg" /></div>
 		<div id="footer-sidebar" class="secondary">
 			<div id="footer-sidebar1">
 				<?php

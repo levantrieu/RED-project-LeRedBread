@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div class="archive-product-page">
-	<div id="primary" class="content-area site-container">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php if ( have_posts() ) : ?>
