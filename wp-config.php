@@ -39,7 +39,7 @@ define('WP_DEBUG_LOG', true);
 define('SCRIPT_DEBUG', true);
 define('JETPACK_DEV_DEBUG', true);
 
-
+define( 'WPCF7_VALIDATE_CONFIGURATION', false );
 
 /* That's all, stop editing! Happy blogging. */
 

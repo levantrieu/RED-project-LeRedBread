@@ -112,3 +112,9 @@ if ( ! function_exists( 'red_starter_setup' ) ) :
 		* Custom functions that act independently of the theme templates.
 		*/
 		require get_template_directory() . '/inc/extras.php';
+
+		/**
+		* Turn off Contact Form 7 validation.
+		*/
+
+		add_filter( 'wpcf7_validate_configuration', '__return_false' );
