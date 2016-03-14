@@ -694,7 +694,7 @@ a {
 /* ------------------
 Blog archive
 ---------------------*/
-.post-archive .hentry {
+.post-archive .hentry, .search-page .hentry {
   margin: 0 0 4rem; }
 
 .entry-title {
@@ -1557,6 +1557,87 @@ Contact page
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center; }
+
+/* ------------------
+Search results page
+---------------------*/
+.search-page .page-header {
+  border-bottom: 1px dashed #d2d2d2;
+  padding: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0; }
+  .search-page .page-header .page-title {
+    text-align: left; }
+
+/* ------------------
+404 page
+---------------------*/
+.error-404 .page-header, .error-404 .tagline, .not-found .page-header, .not-found .tagline {
+  display: none; }
+
+.error-404 .page-content, .not-found .page-content {
+  margin: 0; }
+  .error-404 .page-content p:nth-child(1), .not-found .page-content p:nth-child(1) {
+    display: none; }
+  .error-404 .page-content p:nth-child(2), .not-found .page-content p:nth-child(2) {
+    color: #a1a1a1; }
+  .error-404 .page-content .search-form, .not-found .page-content .search-form {
+    width: 100%; }
+    .error-404 .page-content .search-form fieldset, .not-found .page-content .search-form fieldset {
+      text-align: left; }
+      .error-404 .page-content .search-form fieldset input, .not-found .page-content .search-form fieldset input {
+        font-weight: bold;
+        color: #333333;
+        border-radius: 0.25rem;
+        background-color: #fafafa;
+        border: 1px solid #e1e1e1;
+        padding: 0.5rem 0.5rem;
+        margin: 0.5rem 0.25rem 0 0; }
+      .error-404 .page-content .search-form fieldset .search-submit, .not-found .page-content .search-form fieldset .search-submit {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        color: #fff;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        width: 3rem;
+        height: 2.5rem;
+        background: #400c0d;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        box-shadow: none;
+        text-shadow: none; }
+        .error-404 .page-content .search-form fieldset .search-submit:hover, .not-found .page-content .search-form fieldset .search-submit:hover {
+          background: #6B1416;
+          box-shadow: none;
+          box-shadow: none;
+          text-shadow: none; }
+        .error-404 .page-content .search-form fieldset .search-submit:focus, .not-found .page-content .search-form fieldset .search-submit:focus {
+          outline: none; }
+        .error-404 .page-content .search-form fieldset .search-submit a, .not-found .page-content .search-form fieldset .search-submit a {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1rem;
+          color: #fff;
+          text-decoration: none;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center; }
+  .error-404 .page-content .widgettitle, .not-found .page-content .widgettitle {
+    color: #a1a1a1;
+    text-transform: capitalize;
+    text-align: left; }
+  .error-404 .page-content .widget_recent_entries ul, .not-found .page-content .widget_recent_entries ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .error-404 .page-content .widget_categories .widget-title, .not-found .page-content .widget_categories .widget-title {
+    display: none; }
+  .error-404 .page-content .widget_categories ul, .not-found .page-content .widget_categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .error-404 .page-content .widget_categories ul li, .not-found .page-content .widget_categories ul li {
+      color: #a1a1a1; }
 
 html {
   font-size: 16px;
