@@ -861,7 +861,8 @@ Blog post
 
 footer {
   background-color: #222222;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  /* Footer business hours widget */ }
   footer .footer-contact {
     color: #fff;
     display: -webkit-flex;
@@ -870,19 +871,20 @@ footer {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1.5rem 0; }
+    padding: 3rem 0; }
   footer .contact-info {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 1rem;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center; }
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
     footer .contact-info .contact-header {
       font-size: 1.15rem;
       font-weight: bold;
       text-transform: uppercase;
-      color: #808080; }
+      color: #808080;
+      margin: 0 0 0.5rem 0; }
     footer .contact-info p {
       margin: 0.3rem; }
       footer .contact-info p i {
@@ -907,6 +909,28 @@ footer {
     background-color: #333333;
     text-align: center;
     padding: 1.5rem 0; }
+  footer #footer-sidebar {
+    display: block; }
+  footer #footer-sidebar1 {
+    width: 100%;
+    margin: 0; }
+    footer #footer-sidebar1 .lrb-hours-class {
+      margin: 0; }
+      footer #footer-sidebar1 .lrb-hours-class .widget-title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.15rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #808080;
+        margin: 0 0 0.5rem 0; }
+      footer #footer-sidebar1 .lrb-hours-class .day-of-week {
+        margin: 0rem 0rem 0.5rem 0rem;
+        color: #fff; }
+        footer #footer-sidebar1 .lrb-hours-class .day-of-week span {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #fff; }
 
 /*--------------------------------------------------------------
 # Accessibility

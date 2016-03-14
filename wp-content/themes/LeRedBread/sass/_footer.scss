@@ -6,20 +6,21 @@ footer {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    padding: 3rem 0;
   }
 
   .contact-info {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 1rem;
-    align-self: center;
+    align-self: flex-start;
 
     .contact-header {
       font-size: 1.15rem;
       font-weight: bold;
       text-transform: uppercase;
       color: $color__brand-four;
+      margin: 0 0 0.5rem 0;
     }
 
     p {
@@ -57,5 +58,42 @@ footer {
     background-color: $color__brand-five;
     text-align: center;
     padding: 1.5rem 0;
+  }
+
+
+  /* Footer business hours widget */
+
+  #footer-sidebar {
+  	display:block;
+  }
+
+  #footer-sidebar1 {
+  	width: 100%;
+  	margin: 0;
+
+  	.lrb-hours-class {
+  		margin: 0;
+
+  		.widget-title {
+  			font-family: 'Open Sans', sans-serif;
+  			font-size: 1.15rem;
+        font-weight: bold;
+        text-transform: uppercase;
+  			color: $color__brand-four;
+        margin: 0 0 0.5rem 0;
+  		}
+
+  		.day-of-week {
+  			margin: 0rem 0rem 0.5rem 0rem;
+  			color: #fff;
+
+  			span {
+  				font-family: 'Open Sans', sans-serif;
+  				font-size: 1rem;
+  				font-weight: bold;
+  				color: #fff;
+  			}
+  		}
+  	}
   }
 }
