@@ -105,4 +105,6 @@ function lrb_archive_title( $title ) {
 	}
 
 	remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
-	add_filter( 'get_the_excerpt', 'lrb_wp_trim_excerpt' );	
+	add_filter( 'get_the_excerpt', 'lrb_wp_trim_excerpt' );
+
+?>
