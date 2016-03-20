@@ -31,7 +31,7 @@ get_header(); ?>
 					<?php if ( ! empty( $terms ) ) : ?>
 						<?php foreach ( $terms as $term) : ?>
 							<div class="single-product-icon">
-								<img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt="<?php echo $term->slug; ?>" />
+								<img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.png" alt="<?php echo $term->slug; ?>" />
 								<h6><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></h6>
 							</div>
 						<?php endforeach; ?>

@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="home">
   <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main">
       <div class="hero-unit">
         <div class="hero-text">Baked to perfection.</div>
       </div>
@@ -22,7 +22,7 @@ get_header(); ?>
         <?php if ( ! empty( $terms ) ) : ?>
           <?php foreach ( $terms as $term) : ?>
             <div class="single-product-type">
-              <img src="<?php echo get_template_directory_uri() . '/images\/' . $term->slug; ?>.png" alt="<?php echo $term->slug; ?>" />
+              <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.png" alt="<?php echo $term->slug; ?>" />
               <h3><?php echo $term->name; ?></h3>
               <p><?php echo $term->description; ?> <a href="<?php echo get_term_link( $term ); ?>">See More...</a></p>
             </div>
@@ -33,9 +33,8 @@ get_header(); ?>
       <!-- Products CTA -->
       <div class="site-container cta">
         <p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</p>
-        <button class="main-button"><a href="<?php echo esc_url( home_url() ); ?>/products/">See Our Products</a></button>
+        <a href="<?php echo esc_url( home_url() ); ?>/products/" class="main-button">See Our Products</a>
       </div>
-
 
       <!-- News get_posts loop -->
       <div class="news-section">
@@ -115,8 +114,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-    </div>
-  </main><!-- #main -->
-</div><!-- #primary -->
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 <?php get_footer(); ?>

@@ -1,5 +1,3 @@
-<!-- <p class="product-description"> get_template_part( 'template-parts/content' ); </p> -->
-
 <?php
 /**
 * The template for displaying taxonomy product type.
@@ -29,7 +27,7 @@ get_header(); ?>
 					</div>
 					<div class="product-description">
 						<a href="<?php the_permalink(); ?>"><?php the_title( '<h4>', '</h4>' ); ?></a>
-						<p><?php the_content(); ?></p>
+						<?php the_content(); ?>
 						<p class="product-price">Price: <?php echo CFS()->get( 'price' ); ?></p>
 					</div>
 				</div>
