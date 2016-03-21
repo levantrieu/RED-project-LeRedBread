@@ -33,7 +33,7 @@ get_header(); ?>
       <!-- Products CTA -->
       <div class="site-container cta">
         <p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</p>
-        <a href="<?php echo esc_url( home_url() ); ?>/products/" class="main-button">See Our Products</a>
+        <div class="main-button"><a href="<?php echo esc_url( home_url() ); ?>/products/">See Our Products</a></div>
       </div>
 
       <!-- News get_posts loop -->

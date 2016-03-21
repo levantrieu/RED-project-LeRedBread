@@ -13,8 +13,8 @@
 	<div class="site-container footer-contact">
 		<div class="contact-info">
 			<p class="contact-header">Contact</p>
-			<p><i class="fa fa-envelope"></i> info@leredbread.com</p>
-			<p><i class="fa fa-phone"></i> (555) 343 456 7891</p>
+			<p><i class="fa fa-envelope"></i> <a href="mailto:info@leredbread.com">info@leredbread.com</a></p>
+			<p><i class="fa fa-phone"></i> <a href="tel:5553437891">(555) 343 456 7891</a></p>
 			<p class="social-icons-footer">
 				<a href="#" target="blank"><i class="fa fa-twitter-square"></i></a>
 				<a href="#" target="blank"><i class="fa fa-facebook-square"></i></a>

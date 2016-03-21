@@ -128,19 +128,19 @@ h6 {
 }
 
 .main-button {
-  align-self: center;
   width: 11rem;
   height: 3rem;
   background: $color__brand-two;
-  padding: 0.5rem;
   border-radius: 0.25rem;
   box-shadow: none;
   text-shadow: none;
+	align-self: center;
   display: flex;
   justify-content: center;
 
   &:hover {
-    background: $color__brand-seven;
+    filter: brightness(1.5);
+		text-decoration: underline;
     box-shadow: none;
     box-shadow: none;
     text-shadow: none;
@@ -150,11 +150,11 @@ h6 {
     outline: none;
   }
 
-  a, a:visited {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    align-self: center;
-  }
+	a, a:visited, {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		color: #fff;
+		text-decoration: none;
+		align-self: center;
+	}
 }

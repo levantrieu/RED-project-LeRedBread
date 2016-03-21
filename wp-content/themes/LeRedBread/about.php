@@ -39,7 +39,7 @@ get_header(); ?>
       <!-- Contact CTA -->
       <div class="cta">
         <p>Feel free to contact us with any questions coments or suggestions. We even take custom orders!</p>
-        <a href="<?php echo esc_url( home_url() ); ?>/contact/" class="main-button">Contact Us</a>
+        <div class="main-button"><a href="<?php echo esc_url( home_url() ); ?>/contact/">Contact Us</a></div>
       </div>
     </main><!-- #main -->
   </div><!-- #primary -->
