@@ -21,50 +21,50 @@
 
 .textwidget {
 	color: $color__brand-three;
+}
 
-	.contact-info {
-		margin: 0rem 0rem 0rem 1.1rem;
-		padding: 0rem 0.5rem 0.5rem 0rem;
+.contact-info {
+	margin: 0rem 0rem 0rem 1.1rem;
+	padding: 0rem 0.5rem 0.5rem 0rem;
 
-		li {
-			list-style: none;
-			margin: 0rem 0rem 0.75rem 0rem;
-			margin-left: 1rem;
+	li {
+		list-style: none;
+		margin: 0rem 0rem 0.75rem 0rem;
+		margin-left: 1rem;
 
-			a {
-				color: $color__brand_one;
-				text-decoration: none;
+		a {
+			color: $color__brand_one;
+			text-decoration: none;
 
-				&:hover {
-					color: $color__brand_two;
-					text-decoration: underline;
-				}
+			&:hover {
+				color: $color__brand_two;
+				text-decoration: underline;
 			}
 		}
+	}
 
-		.phone:before {
-			content: '\f095';
-			font-family: 'FontAwesome';
-			float: left;
-			margin-left: -2rem;
-			color: $color__brand-four;
-		}
+	.phone:before {
+		content: '\f095';
+		font-family: 'FontAwesome';
+		float: left;
+		margin-left: -2rem;
+		color: $color__brand-four;
+	}
 
-		.email:before {
-			content: '\f0e0';
-			font-family: 'FontAwesome';
-			float: left;
-			margin-left: -2rem;
-			color: $color__brand-four;
-		}
+	.email:before {
+		content: '\f0e0';
+		font-family: 'FontAwesome';
+		float: left;
+		margin-left: -2rem;
+		color: $color__brand-four;
+	}
 
-		.address:before {
-			content: '\f041';
-			font-family: 'FontAwesome';
-			float: left;
-			margin-left: -2rem;
-			color: $color__brand-four;
-		}
+	.address:before {
+		content: '\f041';
+		font-family: 'FontAwesome';
+		float: left;
+		margin-left: -2rem;
+		color: $color__brand-four;
 	}
 }
 
@@ -72,7 +72,6 @@
 .widget_search .search-submit {
 	display: none;
 }
-
 
 /* Business Hours widget. */
 
@@ -99,19 +98,19 @@
 	ul {
 		padding: 0rem;
 		margin: 0rem 0rem;
+	}
 
-		li {
-			list-style: none;
+	li {
+		list-style: none;
+	}
 
-			a {
-				color: $color__brand_one;
-				text-decoration: none;
+	a {
+		color: $color__brand_one;
+		text-decoration: none;
 
-				&:hover {
-					color: $color__brand_two;
-					text-decoration: underline;
-				}
-			}
+		&:hover {
+			color: $color__brand_two;
+			text-decoration: underline;
 		}
 	}
 }

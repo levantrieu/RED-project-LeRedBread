@@ -931,23 +931,21 @@ footer {
     padding: 1.5rem 0; }
 
 /* Footer business hours widget */
-#footer-sidebar {
+.secondary {
   display: block; }
 
-#footer-sidebar1 {
+.lrb-hours-class {
   width: 100%;
   margin: 0; }
-  #footer-sidebar1 .day-of-week {
-    color: #fff;
-    margin: 0rem 0rem 0.5rem 0rem; }
-    #footer-sidebar1 .day-of-week span {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1rem;
-      font-weight: bold;
-      color: #fff; }
 
-.lrb-hours-class {
-  margin: 0; }
+footer .day-of-week {
+  color: #fff;
+  margin: 0rem 0rem 0.5rem 0rem; }
+  footer .day-of-week span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; }
 
 .widget-title {
   font-family: 'Open Sans', sans-serif;
@@ -1031,37 +1029,38 @@ footer {
 
 .textwidget {
   color: #a1a1a1; }
-  .textwidget .contact-info {
-    margin: 0rem 0rem 0rem 1.1rem;
-    padding: 0rem 0.5rem 0.5rem 0rem; }
-    .textwidget .contact-info li {
-      list-style: none;
-      margin: 0rem 0rem 0.75rem 0rem;
-      margin-left: 1rem; }
-      .textwidget .contact-info li a {
-        color: #db272a;
-        text-decoration: none; }
-        .textwidget .contact-info li a:hover {
-          color: #400c0d;
-          text-decoration: underline; }
-    .textwidget .contact-info .phone:before {
-      content: '\f095';
-      font-family: 'FontAwesome';
-      float: left;
-      margin-left: -2rem;
-      color: #808080; }
-    .textwidget .contact-info .email:before {
-      content: '\f0e0';
-      font-family: 'FontAwesome';
-      float: left;
-      margin-left: -2rem;
-      color: #808080; }
-    .textwidget .contact-info .address:before {
-      content: '\f041';
-      font-family: 'FontAwesome';
-      float: left;
-      margin-left: -2rem;
-      color: #808080; }
+
+.contact-info {
+  margin: 0rem 0rem 0rem 1.1rem;
+  padding: 0rem 0.5rem 0.5rem 0rem; }
+  .contact-info li {
+    list-style: none;
+    margin: 0rem 0rem 0.75rem 0rem;
+    margin-left: 1rem; }
+    .contact-info li a {
+      color: #db272a;
+      text-decoration: none; }
+      .contact-info li a:hover {
+        color: #400c0d;
+        text-decoration: underline; }
+  .contact-info .phone:before {
+    content: '\f095';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -2rem;
+    color: #808080; }
+  .contact-info .email:before {
+    content: '\f0e0';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -2rem;
+    color: #808080; }
+  .contact-info .address:before {
+    content: '\f041';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -2rem;
+    color: #808080; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -1084,14 +1083,16 @@ footer {
 .widget_archive ul {
   padding: 0rem;
   margin: 0rem 0rem; }
-  .widget_archive ul li {
-    list-style: none; }
-    .widget_archive ul li a {
-      color: #db272a;
-      text-decoration: none; }
-      .widget_archive ul li a:hover {
-        color: #400c0d;
-        text-decoration: underline; }
+
+.widget_archive li {
+  list-style: none; }
+
+.widget_archive a {
+  color: #db272a;
+  text-decoration: none; }
+  .widget_archive a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
 
 /*--------------------------------------------------------------
 # Content

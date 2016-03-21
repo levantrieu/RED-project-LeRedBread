@@ -72,13 +72,16 @@ footer {
 
 /* Footer business hours widget */
 
-#footer-sidebar {
+.secondary {
   display:block;
 }
 
-#footer-sidebar1 {
+.lrb-hours-class {
   width: 100%;
   margin: 0;
+}
+
+footer {
 
   .day-of-week {
     color: #fff;
@@ -91,10 +94,6 @@ footer {
       color: #fff;
     }
   }
-}
-
-.lrb-hours-class {
-  margin: 0;
 }
 
 .widget-title {
