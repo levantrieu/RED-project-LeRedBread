@@ -1,6 +1,6 @@
 # Custom WordPress Theme
 
-Please view the site deployed site on [leredbread.levantrieu.com](http://leredbread.levantrieu.com/)
+Please view the site deployed site at [leredbread.levantrieu.com](http://leredbread.levantrieu.com/)
 
 **Project Brief**
 
